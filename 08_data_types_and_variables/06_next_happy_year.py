@@ -1,18 +1,21 @@
-year = int(input())  # 8989-9012 # 1001-1023
-counter = 0
-current_digit = 0
-is_found = True
+year = int(input())
 while True:
-    for digit in str(year):
-        digit_as_int = int(digit)
-        if counter == 0:
-            current_digit = digit_as_int
-        elif current_digit == digit_as_int:
-            is_found = False
-            break
-        counter += 1
     year += 1
-    counter = 0
-    if is_found:
+    year_as_string = str(year)
+    counter = 1
+    for digit in year_as_string:
+        if year_as_string.count(digit) > 1:
+            counter += 1
+            break
+    if counter == 1:
         break
 print(year)
+
+
+# year = int(input())
+# while True:
+#     year += 1
+#     year_as_string = str(year)
+#     if len(year_as_string) == len(set(year_as_string)):
+#         break
+# print(year)
