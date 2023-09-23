@@ -7,4 +7,3 @@
 
 my_list = list(input())
 print(''.join(sorted(my_list, reverse=True)))
-
