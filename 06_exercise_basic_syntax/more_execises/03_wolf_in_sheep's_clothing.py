@@ -1,12 +1,13 @@
-my_list = input()
-sheep_list = list(my_list.split())
-# for i in range(len(sheep_list) - 1, -1, -1):
-    # if i == e == 'wolf':
-    #     print("Please go away and stop eating my sheep")
-    # else:
-    #     print(f'Oi! Sheep number {sheep_list[i - 1]}! You are about to be eaten by a wolf!')
-    #
-    # print(sheep_list[i])
-if 'wolf' in sheep_list or 'wolf,' in sheep_list:
+animals = input()  # wolf, sheep, sheep, sheep, sheep, sheep
+animal_list = animals.split(', ')  # sheep, sheep, wolf
+animal_list.append('farmer')
+animal_list.reverse()
 
-    print(sheep_list)
+for sheep in range(len(animal_list)):
+    wolf = animal_list.index('wolf')
+    if wolf == 1:
+        print("Please go away and stop eating my sheep")
+        break
+    else:
+        print(f'Oi! Sheep number {wolf - 1}! You are about to be eaten by a wolf!')
+        break
