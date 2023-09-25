@@ -1,5 +1,5 @@
-animals = input()  # wolf, sheep, sheep, sheep, sheep, sheep
-animal_list = animals.split(', ')  # sheep, sheep, wolf
+animals = input()
+animal_list = animals.split(', ')
 animal_list.append('farmer')
 animal_list.reverse()
 
