@@ -12,7 +12,7 @@ for line in range(number_of_lines):
             break
     elif bracket_or_string == ')':
         closed_bracket_count += 1
-        
+
         if open_bracket_count == 0:
             break
 
