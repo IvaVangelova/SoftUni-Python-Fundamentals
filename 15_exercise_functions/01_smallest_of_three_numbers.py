@@ -1,4 +1,6 @@
+
 def smallest_number(numbers: list) -> int:
+    """ Returns the smallest number """
     return min(numbers)
 
 
